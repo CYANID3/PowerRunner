@@ -72,9 +72,9 @@ def run_bash_script():
                 val = entries[name].get().strip()
                 if val != "":
                     args.append(val)
-
+            bash_path = r"C:\Program Files\Git\bin\bash.exe"
             process = subprocess.Popen(
-                ["bash"] + args,
+                [bash_path] + args,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 text=True,
